@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-secondary: #aa361e;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #ff7355;
+  --color-on-secondary-container: #6c0f00;
+  --color-secondary-fixed: #ffdad3;
+  --color-on-secondary-fixed: #3e0500;
+  --color-on-secondary-fixed-variant: #891e07;
+  --color-background: #fbf9f4;
+  --color-on-background: #1b1c19;
+  --color-surface: #fbf9f4;
+  --color-on-surface: #1b1c19;
+  --color-surface-container: #f0eee9;
+  --color-surface-container-low: #f5f3ee;
+  --color-surface-container-high: #eae8e3;
+  --color-surface-container-highest: #e4e2dd;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-variant: #e4e2dd;
+  --color-surface-dim: #dbdad5;
+  --color-surface-bright: #fbf9f4;
+  --color-outline: #747878;
+  --color-outline-variant: #c4c7c7;
+  --color-on-surface-variant: #444748;
+  --color-inverse-primary: #c8c6c5;
+  --color-inverse-surface: #30312e;
+  --color-inverse-on-surface: #f2f1ec;
+  --color-primary-container: #1c1b1b;
+  --color-on-primary-container: #858383;
+  --color-primary-fixed: #e5e2e1;
+  --color-primary-fixed-dim: #c8c6c5;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.75rem;
+  --spacing-space-xl: 3rem;
+  --spacing-margin: 1.25rem;
+  --spacing-margin-tablet: 2.5rem;
+  --spacing-margin-desktop: 4rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-desktop: 2rem;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body-md: 'Newsreader', serif;
+  --font-body-lg: 'Newsreader', serif;
+  --font-editorial-lead: 'Newsreader', serif;
+  --font-label-lg: 'Space Grotesk', sans-serif;
+  --font-label-md: 'Space Grotesk', sans-serif;
+  --font-label-caps: 'Space Grotesk', sans-serif;
+  --font-headline-lg: 'Space Grotesk', sans-serif;
+  --font-headline-lg-mobile: 'Space Grotesk', sans-serif;
+  --font-headline-md: 'Space Grotesk', sans-serif;
+  --font-headline-sm: 'Space Grotesk', sans-serif;
+  --font-display-mobile: 'Space Grotesk', sans-serif;
+}
+
+/* Custom font-size utilities */
+.text-body-md { font-size: 15px; line-height: 24px; }
+.text-body-lg { font-size: 18px; line-height: 28px; }
+.text-editorial-lead { font-size: 22px; line-height: 32px; letter-spacing: -0.01em; }
+.text-display { font-size: 72px; line-height: 76px; letter-spacing: -0.04em; }
+.text-display-mobile { font-size: 44px; line-height: 48px; letter-spacing: -0.03em; }
+.text-headline-lg { font-size: 40px; line-height: 44px; letter-spacing: -0.03em; }
+.text-headline-lg-mobile { font-size: 28px; line-height: 32px; letter-spacing: -0.02em; }
+.text-headline-md { font-size: 24px; line-height: 30px; letter-spacing: -0.02em; }
+.text-headline-sm { font-size: 18px; line-height: 24px; letter-spacing: -0.01em; }
+.text-label-lg { font-size: 14px; line-height: 18px; letter-spacing: 0.02em; }
+.text-label-md { font-size: 12px; line-height: 16px; letter-spacing: 0.05em; }
+.text-label-caps { font-size: 11px; line-height: 14px; letter-spacing: 0.1em; }
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.material-symbols-outlined.filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+}
+
+.task-strikethrough {
+  text-decoration: line-through;
+  color: #747878;
+  opacity: 0.65;
+  transition: all 0.2s ease-in-out;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Structural hairline rules & brutalist zero rounded overrides for marketing website */
+.marketing-view * {
+  border-radius: 0px !important;
+}
+
+::selection {
+  background-color: #aa361e;
+  color: #ffffff;
+}

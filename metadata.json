@@ -1,0 +1,6 @@
+{
+  "name": "NOTO — Get Things Done",
+  "description": "Sistem produktivitas terkurasi untuk menata hal-hal penting—tugas harian, fokus terisolasi, dan catatan kilat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
